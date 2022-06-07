@@ -1,0 +1,46 @@
+@charset "utf-8";
+
+#about_sec1 .wrap{
+    width: 1020px;
+    padding: 220px 10px 80px 10px;
+    margin: 0 auto;
+    color: var(--m-bg-color);
+}
+#about_sec1 .wrap h2{
+    font-size: 24px;
+    line-height: 1;
+    text-align: center;
+    font-weight: 300;
+}
+#about_sec1 .wrap h2 span{
+    font-weight: bold;
+}
+#about_sec1 .wrap .cont{}
+#about_sec1 .wrap .cont .box{
+    display: flex;
+    flex-wrap: wrap;
+    padding-top: 40px;
+}
+#about_sec1 .wrap .cont .box .txt_part{
+    width: 580px;
+    margin: 0 10px;
+    font-weight: bold;
+    font-size: 14px;
+}
+#about_sec1 .wrap .cont .box:nth-child(2){
+    flex-direction: row-reverse;
+}
+#about_sec1 .wrap .cont .box:nth-child(1) .img_part{
+    background-image: url(../img/sub/plant.png);
+}
+#about_sec1 .wrap .cont .box:nth-child(2) .img_part{
+    background-image: url(../img/sub/certificate.png);
+}
+#about_sec1 .wrap .cont .box .img_part{
+    width: calc(100% - 620px);
+    height: 300px;
+    margin: 0 10px;
+    background-size: 100%;
+    background-position: 50% 6px;
+    background-repeat: no-repeat;
+}

@@ -1,0 +1,375 @@
+@charset "utf-8";
+
+main{
+    padding-bottom: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+}
+main .main_img{
+    width: 100%; height: 820px;
+    background-image: url(../img/header-bg.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    position: relative;
+}
+main .cloud{
+    position: absolute;
+    left: 0; bottom: 0;
+    width: 100%;
+    height: 290px;
+    background-image: url(../img/cloud.png);
+    background-position: 0% 100%;
+    background-size: auto 100%;
+    background-repeat: no-repeat;
+    animation: 80s moveCloud infinite linear;
+}
+@keyframes moveCloud {
+    0%{background-position: 0% 100%;}
+    50%{background-position: 100% 100%;}
+    10%{background-position: 0% 100%;}
+}
+main .wrap{
+    position: absolute;
+    bottom: 0; left: 0;
+    width: 100%; 
+    padding-bottom: 40px;
+}
+main .wrap .txt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    color: #fff;
+    padding-bottom: 280px;
+    text-shadow: 0 0 8px rgba(7, 38, 54, 0.5);
+}
+main .wrap .txt p{
+    padding-bottom: 20px;
+    font-size: 18px;
+    line-height: 1;
+}
+main .wrap .txt h1{
+    padding-bottom: 60px;
+    font-size: 36px;
+    line-height: 1;
+    font-weight: normal;
+    
+}
+main .wrap .txt h1 span{
+    font-size: 48px;
+}
+main .wrap .txt .btn{
+    display: flex;
+    margin: 0 auto;
+}
+main .wrap .txt .btn button{
+    display: block;
+    width: 160px; height: 30px;
+    margin: 0 20px;
+    font-size: 16px;
+    line-height: 1;
+    border: none;
+    border-radius: 4px;
+    color: #fff;
+    background-color: var(--m-color);
+    cursor: pointer;
+}
+main .wrap .txt .btn button:hover{
+    color: var(--p-color);
+    background-color: var(--bg-color1);
+    transition: background-color 0.5s, color 0.5s;
+}
+main .wrap .cont{
+    width: 1200px;
+    margin: 0 auto;
+    display: flex;
+}
+main .wrap .cont .box{
+    width: calc(100% / 3 - 20px);
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    color: var(--m-bg-color);
+}
+main .wrap .cont .box img{
+    display: block;
+    height: 130px;
+    margin-bottom: 20px;
+}
+main .wrap .cont .box h3{
+    font-size: 18px;
+    font-weight: normal;
+    padding-bottom: 20px;
+}
+main .wrap .cont .box p{
+    font-size: 14px;
+    padding-bottom: 10px;
+}
+
+
+
+#sec1{
+    height: 200px;
+    background-image: url(../img/Investment-Performance-Banner-650.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+    background-attachment: fixed;
+}
+#sec1 .dark_bg{
+    width: 100%; height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+}
+#sec1 .dark_bg h3{
+    font-size: 24px;
+    color: #fff;
+    line-height: 1;
+    padding-bottom: 30px;
+    font-weight: normal;
+}
+#sec1 .dark_bg a{
+    display: block;
+    color: var(--m-color);
+    line-height: 1;
+}
+#sec1 .dark_bg a:hover{
+    color: var(--p-color);
+    transition: color 0.5s;
+}
+
+
+
+#sec2{
+    padding: 80px 0;
+    background-image: url(../img/main2-bg.png);
+    background-size: cover;
+    background-position: 50% 0%;
+}
+#sec2 .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#sec2 .wrap h2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 36px;
+    line-height: 1;
+    color: var(--m-color);
+    font-weight: normal;
+}
+#sec2 .wrap .cont{
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 60px;
+}
+#sec2 .wrap .cont .box{
+    width: calc(25% - 20px);
+    padding: 20px;
+    margin: 0 10px 20px;
+    color: var(--m-bg-color);
+    background-color: #fff;
+    border-radius: 4px;
+}
+#sec2 .wrap .cont .box:hover{
+    box-shadow: 0 0 6px rgba(0, 0, 0, 0.35);
+    transition: box-shadow 0.5s;
+}
+#sec2 .wrap .cont .box .img_part{
+    width: 100%; height: 160px;
+    margin-bottom: 40px;
+    background-size: auto 100%;
+    background-position: 50% 50%;
+}
+#sec2 .wrap .cont .box:hover .img_part{
+    background-size: auto 110%;
+    transition: background-size 0.5s;
+}
+#sec2 .wrap .cont .box .txt_part{
+    height: 180px;
+    position: relative;
+}
+#sec2 .wrap .cont .box .txt_part h3{
+    padding-bottom: 10px;
+    font-size: 18px;
+    line-height: 1;
+}
+#sec2 .wrap .cont .box .txt_part p{
+    font-size: 14px;
+}
+#sec2 .wrap .cont .box .txt_part .btn{
+    position: absolute;
+    right: 0; bottom: 20px;
+}
+#sec2 .wrap .cont .box .txt_part .btn a{}
+#sec2 .wrap .cont .box .txt_part .btn a .btnImg{
+    width: 40px; height: 40px;
+    background-image: url(../img/arrow_right.svg);
+}
+#sec2 .wrap .cont .box .txt_part .btn a:hover .btnImg{
+    background-image: url(../img/arrow_right_hover.svg);
+    transition: background-image 0.3s;
+}
+#sec2 .wrap .pay_icon{
+    width: 100%; height: 50px;
+    padding: 0 10px;
+}
+#sec2 .wrap .pay_icon .icon_img{
+    width: 100%; height: 100%;
+    background-image: url(../img/paysys-icon.png);
+    background-size: 100%;
+    background-position: 50% 50%;
+    background-repeat: no-repeat;
+}
+
+
+
+#sec3{
+    background-image: url(../img/quick-enquiry.jpg);
+    background-size: cover;
+    background-position: 50% 50%;
+}
+#sec3 .blue_bg{
+    width: 100%; height: 100%;
+    padding: 60px 0 80px;
+    background-color: rgba(94, 134, 156, 0.5);
+}
+#sec3 .blue_bg .wrap{
+    width: 1200px;
+    margin: 0 auto;
+}
+#sec3 .blue_bg .wrap h2{
+    text-align: center;
+    padding-bottom: 40px;
+    font-size: 36px;
+    line-height: 1;
+    color: #fff;
+    font-weight: normal;
+}
+#sec3 .blue_bg .wrap .img_box{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+#sec3 .blue_bg .wrap .img_box a{
+    display: block;
+    width: calc(100% / 6 - 20px);
+    margin: 0 10px 20px;
+}
+#sec3 .blue_bg .wrap .img_box a img{
+    display: block;
+    height: 100px;
+}
+
+
+
+/* res */
+@media (max-width:1216px){
+    main .wrap .cont{
+        width: 100%;
+    }
+    #sec2 .wrap{
+        width: 100%;
+    }
+    #sec2 .wrap .pay_icon .icon_img{
+        width: calc(100% - 20px);
+        margin: 0 10px;
+    }
+    #sec3 .blue_bg .wrap{
+        width: 816px;
+    }
+    #sec3 .blue_bg .wrap .img_box a{
+        width: calc(100% / 4 - 20px);
+    }
+}
+@media (max-width:1023px){
+    main{
+        padding-bottom: 145px;
+    }
+    main .wrap .cont .box img{
+        height: 110px;
+    }
+    main .wrap .cont .box p{
+        display: none;
+    }
+    #sec2 .wrap .cont{
+        padding: 0 10px;
+        margin-bottom: 40px;
+    }
+    #sec2 .wrap .cont .box{
+        padding: 10px;
+    }
+    #sec2 .wrap .cont .box .img_part{
+        height: 120px;
+        margin-bottom: 16px;
+        background-size: cover;
+    }
+    #sec2 .wrap .cont .box .txt_part{
+        height: auto;
+    }
+    #sec2 .wrap .cont .box .txt_part h3{
+        font-size: 16px;
+        padding-bottom: 10px;
+    }
+    #sec2 .wrap .cont .box .txt_part p{
+        display: none;
+    }
+    #sec2 .wrap .cont .box .txt_part .btn{
+        display: none;
+    }
+    #sec3 .blue_bg .wrap{
+        width: 100%;
+    }
+    #sec3 .blue_bg{
+        padding: 40px 0 60px;
+    }
+    #sec3 .blue_bg .wrap{}
+    #sec3 .blue_bg .wrap .img_box{
+        padding: 0 10px;
+    }
+    #sec3 .blue_bg .wrap .img_box a{
+        width: calc(100% / 5 - 20px);
+    }
+    #sec3 .blue_bg .wrap .img_box a img{
+        width: 100%;
+        height: auto;
+    }
+}
+@media (max-width:767px){
+    #sec1 .dark_bg h3{
+        font-size: 20px;
+        line-height: 1.2;
+        padding: 0 20px 30px;
+    }
+    #sec2 .wrap .cont{
+        margin-bottom: 0;
+    }
+    #sec2 .wrap .cont .box{
+        width: calc(50% - 20px);
+        box-shadow: 0 0 6px rgba(44, 68, 146, 0.3);
+    }
+    #sec2 .wrap .cont .box:hover .img_part{
+        background-size: cover;
+    }
+    #sec2 .wrap .pay_icon{
+        display: none;
+    }
+    #sec3 .blue_bg .wrap .img_box a{
+        width: calc(100% / 4 - 20px);
+    }
+}
+@media (max-width:575px){
+    main .wrap .cont .box img{
+        height: 80px;
+        margin-bottom: 10px;
+    }
+    main .wrap .cont .box h3{
+        font-size: 16px;
+    }
+}
